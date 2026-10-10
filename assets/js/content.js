@@ -14,24 +14,24 @@ window.TREEID_CONTENT = {
 
   // Tree maps, apps and webpages
   maps: [
-    { city: 'New York City', cityZh: '纽约', title: 'NYC Street Tree Map', url: 'https://tree-map.nycgovparks.org/', en: 'Street tree map', zh: '街道树地图' },
-    { city: 'San Francisco', cityZh: '旧金山', title: 'Street Tree Map', url: 'https://bsm.sfdpw.org/urbanforestry/', en: 'Urban forest map', zh: '城市森林地图' },
-    { city: 'Madison', cityZh: '麦迪逊', title: 'Madison Tree Types', url: 'http://acouch.github.io/madison-trees/#', en: 'Trees of Madison', zh: '麦迪逊的树' },
-    { city: 'Philadelphia', cityZh: '费城', title: 'OpenTreeMap | PhillyTreeMap', url: 'https://www.opentreemap.org/phillytreemap/map/', en: 'Philly tree map', zh: '费城树木地图' },
-    { city: 'Amsterdam', cityZh: '阿姆斯特丹', title: 'Bomen - in beheer van Gemeente Amsterdam', url: 'https://maps.amsterdam.nl/bomen/', en: 'The Amsterdam tree map', zh: '阿姆斯特丹树木地图' },
-    { city: 'London', cityZh: '伦敦', title: 'London Tree Canopy Cover', url: 'https://apps.london.gov.uk/canopy-cover/', en: 'Tree canopy cover', zh: '树冠覆盖率' },
-    { city: 'Edinburgh', cityZh: '爱丁堡', title: 'The Edinburgh Tree Map', url: 'http://edinburghtreemap.org/', en: "The central location for all Edinburgh's tree data", zh: '爱丁堡树木数据汇总' },
-    { city: 'Berlin', cityZh: '柏林', title: 'Gieß den Kiez | CityLAB Berlin', url: 'https://giessdenkiez.de/', en: 'Berlin tree map', zh: '柏林树木地图' },
-    { city: 'National Geographic', cityZh: '国家地理', title: 'Nine Cities That Love Their Trees', url: 'https://www.nationalgeographic.com/news-features/urban-tree-canopy/', en: 'Nine cities that love their trees', zh: '九座热爱树木的城市' },
+    { city: 'New York City', cityZh: '纽约', title: 'NYC Street Tree Map', titleZh: '纽约街道树木地图', url: 'https://tree-map.nycgovparks.org/', en: 'Street tree map', zh: '纽约市公园局' },
+    { city: 'San Francisco', cityZh: '旧金山', title: 'Street Tree Map', titleZh: '旧金山街道树木地图', url: 'https://bsm.sfdpw.org/urbanforestry/', en: 'Urban forest map', zh: '城市森林地图' },
+    { city: 'Madison', cityZh: '麦迪逊', title: 'Madison Tree Types', titleZh: '麦迪逊树种地图', url: 'http://acouch.github.io/madison-trees/#', en: 'Trees of Madison', zh: '麦迪逊的树' },
+    { city: 'Philadelphia', cityZh: '费城', title: 'OpenTreeMap | PhillyTreeMap', titleZh: '费城树木地图（PhillyTreeMap）', url: 'https://www.opentreemap.org/phillytreemap/map/', en: 'Philly tree map', zh: '费城树木地图' },
+    { city: 'Amsterdam', cityZh: '阿姆斯特丹', title: 'Bomen - in beheer van Gemeente Amsterdam', titleZh: '阿姆斯特丹市政树木地图', url: 'https://maps.amsterdam.nl/bomen/', en: 'The Amsterdam tree map', zh: '阿姆斯特丹树木地图' },
+    { city: 'London', cityZh: '伦敦', title: 'London Tree Canopy Cover', titleZh: '伦敦树冠覆盖率地图', url: 'https://apps.london.gov.uk/canopy-cover/', en: 'Tree canopy cover', zh: '树冠覆盖率' },
+    { city: 'Edinburgh', cityZh: '爱丁堡', title: 'The Edinburgh Tree Map', titleZh: '爱丁堡树木地图', url: 'http://edinburghtreemap.org/', en: "The central location for all Edinburgh's tree data", zh: '爱丁堡树木数据汇总' },
+    { city: 'Berlin', cityZh: '柏林', title: 'Gieß den Kiez | CityLAB Berlin', titleZh: '柏林“浇灌你的街区”树木地图', url: 'https://giessdenkiez.de/', en: 'Berlin tree map', zh: '柏林树木地图' },
+    { city: 'National Geographic', cityZh: '国家地理', title: 'Nine Cities That Love Their Trees', titleZh: '九座热爱树木的城市', url: 'https://www.nationalgeographic.com/news-features/urban-tree-canopy/', en: 'Nine cities that love their trees', zh: '九座热爱树木的城市' },
   ],
   tools: [
-    { name: 'Arbor Day tree identification', url: 'https://www.arborday.org/tree-identification', en: 'Tree Identification', zh: '树木识别' },
+    { name: 'Arbor Day tree identification', nameZh: 'Arbor Day 树木识别', url: 'https://www.arborday.org/tree-identification', en: 'Tree Identification', zh: '树木识别' },
     { name: 'SelecTree', url: 'https://selectree.calpoly.edu/', en: 'A tree selection guide', zh: '树种选择指南' },
     { name: 'Urban Tree Key', url: 'https://urbantreekey.calpoly.edu/', en: 'Urban Tree Key', zh: '城市树木检索' },
-    { name: 'Tree guide', url: 'http://www.tree-guide.com/', en: 'tree guide | about trees', zh: '树木指南' },
+    { name: 'Tree guide', nameZh: '树木指南', url: 'http://www.tree-guide.com/', en: 'tree guide | about trees', zh: '树木指南' },
     { name: 'Pl@ntNet', url: 'https://identify.plantnet.org/', en: 'Identify, explore and share your observations of wild plants', zh: '拍照识别、探索与分享野生植物观察' },
     { name: 'iNaturalist', url: 'https://www.inaturalist.org/', en: 'iNaturalist', zh: '自然观察记录与物种识别' },
-    { name: 'Urban tree species directory', url: 'https://www.friendsoftheurbanforest.org/tree-species-directory-sf', en: 'Tree Species Directory | Friends of the Urban Forest', zh: '城市树种名录（旧金山 Friends of the Urban Forest）', kind: { en: 'Directory', zh: '名录' } },
+    { name: 'Urban tree species directory', nameZh: '城市树种名录', url: 'https://www.friendsoftheurbanforest.org/tree-species-directory-sf', en: 'Tree Species Directory | Friends of the Urban Forest', zh: '旧金山 Friends of the Urban Forest 整理的城市树种名录', kind: { en: 'Directory', zh: '名录' } },
   ],
 
   // Tip: trees with opposite branching
@@ -55,11 +55,11 @@ window.TREEID_CONTENT = {
         en: 'Pinaceae', zh: '松科', genera: [
           {
             en: 'Pinus (Pine)', zh: '松属', atlas: 'pine', groups: [
-              { en: 'Subgenus Pinus (hard pines)', zh: '硬松亚属', species: [{ en: 'Scots Pine (Pinus sylvestris)', sp: 22 }, { en: 'Ponderosa Pine (Pinus ponderosa)' }] },
-              { en: 'Subgenus Strobus (soft pines)', zh: '软松亚属', species: [{ en: 'Eastern White Pine (Pinus strobus)', sp: 23 }, { en: 'Sugar Pine (Pinus lambertiana)' }, { en: 'Western White Pine (Pinus monticola)' }] },
+              { en: 'Subgenus Pinus (hard pines)', zh: '硬松亚属', la: 'Pinus', species: [{ en: 'Scots Pine (Pinus sylvestris)', zh: '欧洲赤松', sp: 22 }, { en: 'Ponderosa Pine (Pinus ponderosa)', zh: '西黄松' }] },
+              { en: 'Subgenus Strobus (soft pines)', zh: '软松亚属', la: 'Strobus', species: [{ en: 'Eastern White Pine (Pinus strobus)', zh: '北美乔松', sp: 23 }, { en: 'Sugar Pine (Pinus lambertiana)', zh: '糖松' }, { en: 'Western White Pine (Pinus monticola)', zh: '西部白松' }] },
             ],
           },
-          { en: 'Picea (Spruce)', zh: '云杉属', atlas: 'spruce', species: [{ en: 'Norway Spruce (Picea abies)' }, { en: 'White Spruce (Picea glauca)' }, { en: 'Sitka Spruce (Picea sitchensis)' }, { en: 'Black Spruce (Picea mariana)', sp: 26 }, { en: 'Blue Spruce (Picea pungens)', sp: 27 }] },
+          { en: 'Picea (Spruce)', zh: '云杉属', atlas: 'spruce', species: [{ en: 'Norway Spruce (Picea abies)', zh: '欧洲云杉' }, { en: 'White Spruce (Picea glauca)', zh: '白云杉' }, { en: 'Sitka Spruce (Picea sitchensis)', zh: '北美云杉' }, { en: 'Black Spruce (Picea mariana)', zh: '黑云杉', sp: 26 }, { en: 'Blue Spruce (Picea pungens)', zh: '蓝云杉', sp: 27 }] },
           { en: 'Larix (Larch)', zh: '落叶松属', atlas: 'larch', species: [{ en: 'Larix laricina (Tamarack)', zh: '美洲落叶松', sp: 29 }] },
           { en: 'Abies (Fir)', zh: '冷杉属', atlas: 'fir' },
           { en: 'Cedrus (Cedar)', zh: '雪松属', atlas: 'cedar' },

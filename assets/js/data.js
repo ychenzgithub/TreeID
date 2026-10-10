@@ -5265,7 +5265,12 @@ window.TREEID_DATA = {
       "h": 225,
       "credit": "Black ash | ontario.ca"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "奇数羽状复叶，对生，有 7–11 片长椭圆形小叶，小叶无柄；果实为扁平、带翅的单种子翅果；成熟树的树皮深灰色，有深纵脊；树干通直，树冠圆形或塔形。",
+     "location": "生长在北美东部的湿润低地和沼泽中。",
+     "uses": "木材用于制作工具柄、家具和篮筐。"
+    }
    },
    {
     "appearance": "Compound pinnate leaves with 5-9 leaflets (typically 7); leaflets are stalked; light gray bark with diamond-shaped ridges; a winged samara; straight trunk and a rounded or pyramidal crown",
@@ -5313,7 +5318,12 @@ window.TREEID_DATA = {
       "h": 225,
       "credit": "White ash | ontario.ca"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "羽状复叶，有 5–9 片小叶（通常 7 片），小叶有柄；树皮浅灰色，有菱形纹脊；果实为带翅的翅果；树干通直，树冠圆形或塔形。",
+     "location": "生长在北美东部和中部湿润、排水良好的土壤中。",
+     "uses": "用于制作棒球棒、家具和地板。"
+    }
    },
    {
     "appearance": "Alternate, ovate leaves with large teeth on the edges, with flattened bases and long petioles; Male flowers in large pendulous catkins; Reddish-brown, fuzzy buds on twigs.",
@@ -5368,7 +5378,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "BIGTOOTH ASPEN - POPULUS GRANDIDENTATA ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "单叶互生，卵形，叶缘有大锯齿，叶基较平，叶柄长；雄花为下垂的大型柔荑花序；小枝上的芽红褐色、有绒毛。",
+     "location": "常见于美国东北部和加拿大的混交林中。",
+     "uses": "用作造纸用的纸浆材和胶合板，也为野生动物提供栖息地。"
+    }
    },
    {
     "appearance": "Small, fine-toothed leaves, turns yellow, gold, or red in the fall; Flattened petioles that cause leaves to tremble in the wind; Smooth, white bark with black scars where branches have died.",
@@ -5419,7 +5434,12 @@ window.TREEID_DATA = {
       "h": 299,
       "credit": "Virginia Tech Dendrology Fact Sheet"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶小，有细锯齿，秋季变为黄色、金色或红色；叶柄扁平，使叶片在风中颤动；树皮光滑、白色，枝条枯落处留有黑色疤痕。",
+     "location": "分布于北美的山区和北方针叶林中。",
+     "uses": "用于纸浆材、火柴和生态修复。"
+    }
    },
    {
     "appearance": "Heart-shaped leaves with finely toothed margins; Light gray, smooth bark, and becoming dark gray with shallow, vertical ridges; Small, white to yellow, fragrant flowers; Small, pale, dry, persistent, nearly round fruit covered with dense brown hairs, developed beneath the wings.",
@@ -5474,7 +5494,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Basic Tree | Tree Identification ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶心形，叶缘有细锯齿；树皮浅灰色、光滑，老后变为深灰色并有浅纵脊；花小，白色至黄色，有香味；果实小、浅色、干燥、宿存，近圆形，密被褐色毛，长在翅状苞片下方。",
+     "location": "生长在北美东部肥沃湿润的土壤中。",
+     "uses": "木材用于雕刻，花可用于产蜜。"
+    }
    },
    {
     "appearance": "Smooth gray bark; toothed pointed oval dark green leaves on alternate stems, parallel side leaf veins off midrib, each has distinctive point; produces beechnuts, a small, triangular nut that grows in burrs.",
@@ -5529,7 +5554,12 @@ window.TREEID_DATA = {
       "h": 214,
       "credit": "American Beech (F. grandifolia)"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树皮光滑、灰色；叶互生，卵形，先端尖，有锯齿，深绿色，侧脉从中脉平行伸出，每条侧脉末端有一个明显的齿尖；结山毛榉坚果，是长在刺壳里的小三棱形坚果。",
+     "location": "见于美国东部的阔叶混交林中。",
+     "uses": "用于家具、地板，也是野生动物的食物。"
+    }
    },
    {
     "appearance": "Thin, papery white bark that peels in strips, many pores or \"lenticels\" in the bark; Simple, serrated, oval or heart-shaped leaves, pointed, rounded at base, alternate on the stem; Long catkins hang below the branch.",
@@ -5590,7 +5620,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Paper Birch – UJAMAA SEEDS"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树皮薄，白色似纸，呈条状剥落，树皮上有许多皮孔；单叶互生，有锯齿，卵形或心形，先端尖，基部圆；长长的柔荑花序垂在枝下。",
+     "location": "常见于北美北部，多在湿地附近。",
+     "uses": "用于制作独木舟、作柴火，也用于传统医药。"
+    }
    },
    {
     "appearance": "Pinnately compound leaves (opposite) with 3–5 leaflets, leaflets are coarsely toothed, sometimes with short lobes; light green bark; Winged, paired fruits in drooping clusters (winged seeds); Early flower blooming.",
@@ -5663,7 +5698,13 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Acer negundo (Boxelder): Minnesota ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "羽状复叶（对生），有 3–5 片小叶，小叶有粗锯齿，有时有浅裂；树皮浅绿色；果实为成对带翅的翅果，成簇下垂；开花早。",
+     "location": "常见于北美的河岸和受干扰地带。",
+     "uses": "作遮荫树、防止水土流失，也可用于生产枫糖浆。",
+     "other": "梣叶槭（Ash-leaved maple）"
+    }
    },
    {
     "appearance": "Conical shape; Scale-like leaves, flattened lateral shoots; fibrous bark, often see diamond-shaped bark patterns; fruit is a cone, oblong, protrude upright on the branches, leathery scales, red-brown and rounded, with a small spine on the tip.",
@@ -5718,7 +5759,12 @@ window.TREEID_DATA = {
       "h": 262,
       "credit": "Northern White-Cedar | Bates Canopy ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树形呈圆锥形；叶鳞片状，侧枝扁平；树皮纤维状，常可见菱形纹；果实为长圆形球果，直立生于枝上，鳞片革质，红褐色，圆钝，顶端有小刺。",
+     "location": "见于美国北部和加拿大的沼泽地带及石灰岩土壤中。",
+     "uses": "木材用于围栏、屋顶木瓦，也用于提取精油。"
+    }
    },
    {
     "appearance": "Simple, shiny, ovate to oblong leaves with finely toothed margins, turn yellow to orange and red in the fall; Flowers are small, white and 5-petalled; Young trees have lighter gray bark with lenticels, older trees have ridged or plated bark; Berry-like reddish-black fruit, 8-10 mm in diameter.",
@@ -5791,7 +5837,12 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "Black Cherry | Glen Arboretum"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "单叶，有光泽，卵形至长圆形，叶缘有细锯齿，秋季变为黄色、橙色和红色；花小，白色，5 瓣；幼树树皮浅灰色、有皮孔，老树树皮有纵脊或呈块状；果实为红黑色浆果状，直径 8–10 毫米。",
+     "location": "生长在北美东部的森林和路旁。",
+     "uses": "用于家具，是野生动物的食物，也有药用价值。"
+    }
    },
    {
     "appearance": "Deciduous, fan-shaped leaves with 2 lobes, turn bright yellow in the fall; oval fruit that turns orange when ripe; also known as maidenhair trees.",
@@ -5846,7 +5897,12 @@ window.TREEID_DATA = {
       "h": 260,
       "credit": "Gingko - TreeInspection.com"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "落叶树，叶扇形，二裂，秋季变为亮黄色；果实椭圆形，成熟时变为橙色；英文又称 maidenhair tree。",
+     "location": "原产中国，现广泛种植于世界各地的城市。",
+     "uses": "观赏树，也用于传统医药。"
+    }
    },
    {
     "appearance": "Peeling shaggy bark, light gray; alternative compound leaves with 5-7 large leaflets, fine toothed.The fruit is a drupe (1 to 1+1⁄2 in) long, an edible nut with a hard, bony shell.",
@@ -5901,7 +5957,12 @@ window.TREEID_DATA = {
       "h": 266,
       "credit": "Shagbark Hickory"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树皮浅灰色，呈蓬松的条片状剥落；复叶互生，有 5–7 片大型小叶，有细锯齿。果实为核果，长 1–1.5 英寸，坚果可食，外壳坚硬。",
+     "location": "见于美国东部的高地和低地森林中。",
+     "uses": "木材用于工具柄、烟熏调味，坚果可食用。"
+    }
    },
    {
     "appearance": "Serrated, oval leaves, simple, alternative; thin, reddish flaky bark; Slender twigs that are slightly zigzag and hairy toward the tip; catkins; hop-like fruit clusters.",
@@ -5974,7 +6035,13 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "American Hophornbeam | Yale Nature Walk"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "单叶互生，卵形，有锯齿；树皮薄，红色，片状剥落；小枝细，略呈之字形，先端有毛；有柔荑花序；果序似啤酒花。",
+     "location": "见于北美东部干燥多岩石的森林中。",
+     "uses": "木材坚硬，用于工具柄和栅栏桩。",
+     "other": "铁木（Ironwood）"
+    }
    },
    {
     "appearance": "Alternate, feather-compound leaves with 7–21 oval untoothed leaflets; thorny (paired) branches; Fragrant, white flowers in drooping clusters 4–5 inches long, with five petals; Flat, brown seed pod, 3 to 4 inches in length; Young bark is smooth and brown or green in color, older bark is thick with a rope-like appearance.",
@@ -6035,7 +6102,12 @@ window.TREEID_DATA = {
       "h": 253,
       "credit": "Black Locust | Yale Nature Walk"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "羽状复叶互生，有 7–21 片卵形全缘小叶；枝上有成对的刺；花白色、有香味，5 瓣，组成长 4–5 英寸的下垂花序；荚果扁平、褐色，长 3–4 英寸；幼树树皮光滑，褐色或绿色，老树树皮厚，呈绳索状纹理。",
+     "location": "见于北美东部的受干扰地带和森林中。",
+     "uses": "木材耐久，用于栅栏桩，也用于防止水土流失。"
+    }
    },
    {
     "appearance": "Compound leaves, pinnately compound on older trees but bipinnately compound on vigorous young trees, 8–28 small, egg-shaped leaflets; large seed pods; large thorns (not paired) on trunk; Light brown-gray bark.",
@@ -6083,7 +6155,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Honey Locust"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "复叶，老树上为一回羽状复叶，生长旺盛的幼树上为二回羽状复叶，有 8–28 片卵形小叶；荚果大；树干上有大刺（不成对）；树皮浅褐灰色。",
+     "location": "见于美国中部和东部的洪泛平原和开阔田野。",
+     "uses": "观赏树，荚果可作牲畜饲料。"
+    }
    },
    {
     "appearance": "Three-lobed pointed leaves, V-shaped sinuses, saw toothed edge, turn brilliant red in early autumn; smooth gray bark.",
@@ -6138,7 +6215,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Red Maple | Yale Nature Walk"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶三裂，裂片尖，缺刻呈 V 形，叶缘有锯齿，早秋变为鲜红色；树皮光滑、灰色。",
+     "location": "见于北美东部的沼泽和干燥高地。",
+     "uses": "用于木材、枫糖浆，也是观赏树。"
+    }
    },
    {
     "appearance": "Deeply lobed (skinny) leaves with toothed edges, green on top and silvery underneath, turn pale yellow in late fall;",
@@ -6186,7 +6268,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "SILVER MAPLE - ACER SACCHARINUM | The ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶深裂（裂片细长），叶缘有锯齿，正面绿色、背面银白色，晚秋变为淡黄色。",
+     "location": "生长在北美东部的河岸。",
+     "uses": "生长快的遮荫树，也有一些木材用途。"
+    }
    },
    {
     "appearance": "Five-lobed leaves, U-shaped and relatively shallow sinuses, smooth edges, display vibrant colors during fall, including yellow, orange, and red;",
@@ -6234,7 +6321,12 @@ window.TREEID_DATA = {
       "h": 197,
       "credit": "Sugar Maple | Acer saccharum"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶五裂，缺刻呈 U 形且较浅，叶缘平滑，秋季呈现黄色、橙色和红色等鲜艳色彩。",
+     "location": "见于美国东北部和加拿大的凉爽森林中。",
+     "uses": "用于生产枫糖浆，以及地板和家具。"
+    }
    },
    {
     "appearance": "Ovate or heart-shaped leaves, finely serrated margin, dark green, and rough on top, paler and fuzzy on the bottom; flowers are in hanging clusters; dark edible berries; short trunk and a broad rounded crown; trees have milky sap.",
@@ -6307,7 +6399,12 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Red Mulberry (Morus rubra)"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶卵形或心形，叶缘有细锯齿，正面深绿色、粗糙，背面颜色较浅、有绒毛；花组成下垂的花序；浆果深色，可食；树干短，树冠宽圆；树有乳白色汁液。",
+     "location": "见于北美东部的湿润森林中。",
+     "uses": "果实可食，木材用于家具。"
+    }
    },
    {
     "appearance": "Alternate, broadly obovate leaves with 7–11 pointed lobes, turn red or brown in fall; dark rough bark; Acorns are reddish-brown, shiny, barrel-shaped, hairy at the cup end.",
@@ -6359,7 +6456,12 @@ window.TREEID_DATA = {
       "h": 183,
       "credit": "Northern Red Oak Trees ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "叶互生，宽倒卵形，有 7–11 个尖裂片，秋季变为红色或褐色；树皮深色、粗糙；橡子红褐色、有光泽，呈桶形，靠壳斗一端有毛。",
+     "location": "遍布北美的森林中。",
+     "uses": "用于硬木地板、家具和木桶。"
+    }
    },
    {
     "appearance": "Alternate, simple, and rounded lobed leaves, turn red or brown in fall; light gray bark; Acorns are light brown, shiny, and widest near the base, ~1/4 is enclosed in a bowl-shaped cap.",
@@ -6407,7 +6509,12 @@ window.TREEID_DATA = {
       "h": 225,
       "credit": "White Oak"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "单叶互生，裂片圆钝，秋季变为红色或褐色；树皮浅灰色；橡子浅褐色、有光泽，基部最宽，约 1/4 被碗状壳斗包住。",
+     "location": "生长在北美东部肥沃的森林中。",
+     "uses": "用于造船、木桶和家具。"
+    }
    },
    {
     "appearance": "Twisted, paired short, blue-green needles (in bundles of two); orange flaky bark; Cones cylindrical and pointed at the ends (3 in).![[object Object]][image36]",
@@ -6456,7 +6563,12 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "Scots Pine tree identification"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "针叶短，蓝绿色，扭曲，两针一束；树皮橙色，片状剥落；球果圆柱形，两端尖（约 3 英寸）。",
+     "location": "见于北欧和北美。",
+     "uses": "用作圣诞树，也用于木材和纸浆材。"
+    }
    },
    {
     "appearance": "Tall straight trunks; Long (3-5 in), soft needles in bundles of five (same to the letters in W-H-I-T-E); Long pine cones (3–6 in), gradually tapering, without prickles, bark is deeply grooved, with broad, scaly ridges.",
@@ -6505,7 +6617,12 @@ window.TREEID_DATA = {
       "h": 197,
       "credit": "Eastern White Pine | Pinus strobus"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树干高大通直；针叶长（3–5 英寸）而柔软，五针一束（与 W-H-I-T-E 五个字母对应）；球果长（3–6 英寸），逐渐变细，无刺；树皮有深沟，纵脊宽而呈鳞片状。",
+     "location": "见于北美东北部。",
+     "uses": "用于建筑、家具和船桅。"
+    }
    },
    {
     "appearance": "The White Poplar is a medium to large deciduous tree with a broad, rounded crown. The bark is smooth and whitish-gray, often with dark diamond-shaped markings. The leaves are simple, alternate, lobed (3-5), and have a shiny, dark green topside, and white, woolly underside. Flowers are green (reddish green in males), arranged in pendant clusters (catkins) several inches long.",
@@ -6578,7 +6695,12 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "White Poplar (Populus alba)"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "中到大型落叶乔木，树冠宽圆。树皮光滑，灰白色，常有深色菱形斑纹。单叶互生，3–5 裂，正面深绿有光泽，背面白色、有绵毛。花绿色（雄花带红绿色），组成数英寸长的下垂柔荑花序。",
+     "location": "常见于欧洲、西亚和北非，喜湿润、排水良好的土壤，常作为观赏树种植在城市中。",
+     "uses": "木材用于制作火柴、纸张和板条箱，也种植作防风林和防止水土流失。"
+    }
    },
    {
     "appearance": "Sassafras is a medium-sized deciduous tree with a distinctive, irregular crown. The leaves are polymorphic, meaning they can have different shapes (entire, mitten-shaped, or three-lobed) on the same tree. Leaves are alternate, simple, and aromatic when crushed. The bark is deeply furrowed and reddish-brown.",
@@ -6639,7 +6761,12 @@ window.TREEID_DATA = {
       "h": 206,
       "credit": "Sassafras: Tree of Teas, Leaves, and ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "中型落叶乔木，树冠不规则，很有特点。叶具多形性，同一棵树上可以有不同形状的叶（全缘、手套形或三裂）。单叶互生，揉碎后有香味。树皮有深沟，红褐色。",
+     "location": "原产北美东部，常见于林地、田野和围栏边，喜排水良好的酸性土壤。",
+     "uses": "根和树皮用于泡茶和为根汁汽水调味，木材用于家具和围栏。"
+    }
    },
    {
     "appearance": "Small to medium-sized evergreen; straight narrow trunk with little taper; short (0.25-0.5 in), bluish-green needles, stiff, four-sided; thin, scaly, greyish brown bark; small cones (~ 1 in, smallest among all spruces).",
@@ -6709,7 +6836,12 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "Picea mariana (black spruce) description"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "小到中型常绿树；树干通直细长，几乎不变细；针叶短（0.25–0.5 英寸），蓝绿色，坚硬，四棱形；树皮薄，鳞片状，灰褐色；球果小（约 1 英寸，是所有云杉中最小的）。",
+     "location": "常见于北美的北方针叶林中。",
+     "uses": "用于纸浆材、建筑和乐器。"
+    }
    },
    {
     "appearance": "A coniferous tree with a pyramidal shape and stiff, sharp needles that range from blue-green to silvery-blue. The bark is gray and furrowed. Cones erect (3-4 in), standing (upside down) vertically from the branches.",
@@ -6765,7 +6897,14 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Colorado Blue Spruce (Picea pungens)"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "针叶树，树形呈塔形，针叶坚硬锐利，颜色从蓝绿色到银蓝色。树皮灰色，有沟纹。球果直立（3–4 英寸），竖直长在枝条上。",
+     "location": "原产美国落基山脉，常作为观赏树种植在园林和公园中。",
+     "uses": "主要因其醒目的颜色和树形而用于观赏，木材有时用于建筑和制作乐器。",
+     "note": "根据这个维基百科页面，Colorado spruce（科罗拉多云杉）和 Blue spruce（蓝云杉）是同一种树。",
+     "noteLink": "维基百科页面"
+    }
    },
    {
     "appearance": "A large deciduous tree with a massive trunk and broad, irregular crown. The bark is distinctive, peeling off in patches to reveal a white or grayish inner bark. The leaves are large and palmately lobed (3-5), edges are saw-toothed, undersides are fuzzy, veins radiate from a single point. Have \"wings\", so they readily disperse on the wind over a large area. Small, round stickery pods. Dangling clusters of greenish-yellow flowers are borne in spring.",
@@ -6820,7 +6959,12 @@ window.TREEID_DATA = {
       "h": 191,
       "credit": "Tree of the Month – American Sycamore ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "高大的落叶乔木，树干粗壮，树冠宽而不规则。树皮很有特点，成块剥落，露出白色或灰白色的内皮。叶大，掌状 3–5 裂，叶缘有锯齿，背面有绒毛，叶脉从一点放射出来。种子有“翅”，能随风传播到很远的地方。果实为带刺的小圆球。春季开下垂的黄绿色花簇。",
+     "location": "遍布美国东部和中部，常见于河岸和湿润土壤中。",
+     "uses": "木材用于家具、地板和砧板，也种植作遮荫树和观赏树。"
+    }
    },
    {
     "appearance": "The Tamarack is a deciduous conifer with a narrow, conical shape. The needles are soft, flat, about 1 in long, arranged in clusters of 10–20, turn yellow before falling in autumn. The bark is scaly and grayish-brown. Cones: Small, bright red, turning brown and opening to release seeds.",
@@ -6875,7 +7019,12 @@ window.TREEID_DATA = {
       "h": 225,
       "credit": "Tamarack | ontario.ca"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "落叶针叶树，树形窄圆锥形。针叶柔软、扁平，长约 1 英寸，10–20 根簇生，秋季落叶前变黄。树皮鳞片状，灰褐色。球果小，鲜红色，成熟后变褐并张开释放种子。",
+     "location": "原产北美北部，常见于寒冷潮湿的地方，如泥炭沼泽和沼泽。",
+     "uses": "木材用于桩、杆和建筑，一些美洲原住民部落也将其用于传统医药。"
+    }
    },
    {
     "appearance": "The trunk is straight, tapering, and light-colored. Bark is gray at first, then becomes gray to brown with ridges and grooves. Large and broad simple leaves with pointed lobes (mostly 4), with a v-shaped notch at the top and long stem. Large, showy, and tulip-shaped flowers. The fruit is a brown, woody, conelike structure that is longer than broad.",
@@ -6930,7 +7079,12 @@ window.TREEID_DATA = {
       "h": 189,
       "credit": "Liriodendron"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "树干通直、渐细，颜色较浅。树皮起初灰色，后变为灰色至褐色，有纵脊和沟。叶大而宽，单叶，裂片尖（多为 4 裂），叶顶有 V 形缺口，叶柄长。花大而艳丽，呈郁金香形。果实为褐色木质的球果状结构，长大于宽。",
+     "location": "见于美国东部的森林中，喜湿润、排水良好的土壤。",
+     "uses": "用于木材、观赏，也为野生动物提供栖息地。"
+    }
    },
    {
     "appearance": "Large deciduous tree that can grow up to 100 feet tall. It has a straight trunk and a rounded crown. The bark is dark brown to black and deeply furrowed, ridges form diamond-shaped patterns. The leaves are pinnately compound, alternate, pointed and irregularly toothed, typically with 15-23 leaflets. The fruit is a round, green husk containing a hard, corrugated nut.",
@@ -6990,7 +7144,16 @@ window.TREEID_DATA = {
       "h": 259,
       "credit": "Identifying winter trees ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "高大的落叶乔木，可高达 100 英尺，树干通直，树冠圆形。树皮深褐色至黑色，有深沟，纵脊形成菱形纹。叶为羽状复叶，互生，小叶先端尖、有不规则锯齿，通常有 15–23 片小叶。果实为圆形绿色外壳，内有坚硬、有皱纹的坚果。",
+     "location": "原产北美东部，常见于阔叶混交林中肥沃、排水良好的土壤，喜全日照，多见于河谷和低地。",
+     "usesList": [
+      "木材：颜色深、纹理细，价值很高，用于高档家具、橱柜、地板和贴面，也用于枪托和乐器。",
+      "坚果：可食，用于烘焙和烹饪，也用来榨油。",
+      "其他用途：果壳和树皮曾用于传统染料和药物。也种植作遮荫树和观赏树，但它会产生胡桃醌（juglone），抑制附近某些植物的生长。"
+     ]
+    }
    },
    {
     "appearance": "Weeping trees are identified by their branches that droop downward, often touching the ground. The branches are typically soft and limp, and the crown may be bent. They have narrow alternate leaves, a smooth, sometimes ridged bark, and a fast growth rate.",
@@ -7045,7 +7208,12 @@ window.TREEID_DATA = {
       "h": 194,
       "credit": "Golden weeping willow | The Morton ..."
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "枝条下垂，常常垂到地面。枝条通常柔软下垂，树冠可能弯曲。叶窄，互生；树皮光滑，有时有纵脊；生长迅速。",
+     "location": "世界各地的水边都有，如池塘或河流旁。",
+     "uses": "观赏树、防止水土流失，也有药用价值。"
+    }
    },
    {
     "appearance": "Deciduous shrub or small tree that typically grows 15-20 feet tall with a similar spread. It has an irregular, spreading habit with multiple stems. The bark is smooth and gray-brown. Its leaves are simple, alternate, broadly oval, and have wavy-toothed margins with asymmetrical bases. They are medium to dark green in summer, turning golden-yellow in fall. The most distinctive feature is its unusual yellow flowers with strap-like petals that appear in late fall to early winter, typically after the leaves have dropped. The fruit is a woody capsule that matures the following year and explosively ejects small black seeds up to 30 feet away.",
@@ -7132,7 +7300,19 @@ window.TREEID_DATA = {
       "h": 195,
       "credit": "American Witchhazel (Hamamelis virginiana)"
      }
-    ]
+    ],
+    "zhText": {
+     "appearance": "落叶灌木或小乔木，通常高 15–20 英尺，冠幅相近，株形不规则、开展，多干。树皮光滑，灰褐色。单叶互生，宽卵形，叶缘呈波状齿，叶基不对称；夏季中至深绿色，秋季变为金黄色。最有特点的是它奇特的黄色花，花瓣呈带状，在晚秋至初冬开放，通常在落叶之后。果实为木质蒴果，次年成熟，会把黑色小种子弹射到 30 英尺远。",
+     "location": "原产北美东部，从新斯科舍向西到明尼苏达、向南到佛罗里达和得克萨斯。通常生长在湿润林地、林缘和溪岸，喜半阴至全日照及湿润、排水良好的酸性土壤，但也能适应多种土壤。",
+     "usesList": [
+      "药用：树皮和叶用于制作金缕梅提取液，这是一种天然收敛剂，用于治疗痤疮、蚊虫叮咬、瘀伤和炎症等皮肤问题。",
+      "美容：常见于须后水、乳液等护肤品中。",
+      "园林：因花期晚、秋色好而作为观赏植物。",
+      "传统用途：美洲原住民用金缕梅治疗肿瘤、眼部炎症等疾病。",
+      "探水杖：历史上曾用它的分叉枝条作“探水杖”寻找地下水源。",
+      "野生动物价值：种子是鸟类和小型哺乳动物的食物，植株也为野生动物提供隐蔽处。"
+     ]
+    }
    }
   ],
   "comparisons": [
@@ -7245,7 +7425,8 @@ window.TREEID_DATA = {
     ],
     "link": {
      "text": "How To Identify Coniferous Trees: Easy tricks for pine, spruce, fir & more",
-     "url": "https://nature-mentor.com/how-to-identify-coniferous-trees/"
+     "url": "https://nature-mentor.com/how-to-identify-coniferous-trees/",
+     "textZh": "如何识别针叶树：区分松、云杉、冷杉等的小窍门（英文文章）"
     }
    },
    {
@@ -7696,7 +7877,12 @@ window.TREEID_DATA = {
     ],
     "name": "American Holly",
     "sci": "Ilex opaca",
-    "zh": "冬青"
+    "zh": "冬青",
+    "zhText": {
+     "appearance": "常绿树；叶卵形或椭圆形，边缘有刺状尖齿（叶缘有尖硬的刺），叶厚、革质，正面深绿有光泽，背面浅绿；浆果鲜红色。",
+     "location": "原产美国东南部，喜排水良好的土壤。",
+     "uses": "常作观赏植物，木材用于家具和雕刻。"
+    }
    },
    {
     "appearance": "Small understory tree with smooth, gray, muscle-like bark; Oval to elliptical leaves, sharply serrated edges, resembles birch leaves, but usually darker green and somewhat thicker, Turns yellow to reddish-orange in fall; drooping catkins",
@@ -7739,7 +7925,13 @@ window.TREEID_DATA = {
     ],
     "name": "American Hornbeam",
     "sci": "Carpinus caroliniana",
-    "zh": "美国鹅耳枥"
+    "zh": "美国鹅耳枥",
+    "zhText": {
+     "appearance": "林下小乔木，树皮光滑、灰色，似肌肉般起伏；叶卵形至椭圆形，叶缘有尖锐锯齿，与桦树叶相似，但通常颜色更深、稍厚，秋季变为黄色至橙红色；柔荑花序下垂。",
+     "location": "见于北美东部的湿润森林和溪岸。",
+     "uses": "木材极坚硬，用于工具柄和木槌。",
+     "other": "肌肉木（Musclewood）、蓝山毛榉（Blue Beech）"
+    }
    },
    {
     "appearance": "Small tree with pinnate leaves, white spring flowers, and bright orange-red berries.",
@@ -7776,7 +7968,12 @@ window.TREEID_DATA = {
     ],
     "name": "American Mountain Ash",
     "sci": "Sorbus americana",
-    "zh": ""
+    "zh": "美洲花楸",
+    "zhText": {
+     "appearance": "小乔木，羽状复叶，春季开白花，结鲜艳的橙红色浆果。",
+     "location": "生长在北美东北部，特别是凉爽的高海拔森林中。",
+     "uses": "浆果是鸟类的食物，也作观赏树种植。"
+    }
    },
    {
     "appearance": "Small tree with thorny branches, white flowers, and edible red or yellow plums.",
@@ -7813,7 +8010,12 @@ window.TREEID_DATA = {
     ],
     "name": "American Plum",
     "sci": "Prunus americana",
-    "zh": "美洲李"
+    "zh": "美洲李",
+    "zhText": {
+     "appearance": "小乔木，枝上有刺，花白色，结可食的红色或黄色李子。",
+     "location": "见于北美中部和东部，常生于灌丛和草原中。",
+     "uses": "果实用于制作果酱和果冻，也种植为野生动物提供栖息地。"
+    }
    },
    {
     "appearance": "Deciduous conifer with feathery, needle-like leaves that turn russet in fall; forms distinctive \"knees.\"",
@@ -7856,7 +8058,12 @@ window.TREEID_DATA = {
     ],
     "name": "Bald Cypress",
     "sci": "Taxodium distichum",
-    "zh": "落羽杉"
+    "zh": "落羽杉",
+    "zhText": {
+     "appearance": "落叶针叶树，叶羽毛状、似针，秋季变为红褐色；会长出特别的“膝根”。",
+     "location": "见于美国东南部的沼泽和洪泛平原。",
+     "uses": "木材耐腐，用于建筑和造船。"
+    }
    },
    {
     "appearance": "Narrow, conical evergreen; flat, dark green needles, with 2 white stomatal bands below, slightly notched tip; leaves appear to be in two more-or-less horizontal rows on either side of the shoot; erect resinous cones.",
@@ -7893,7 +8100,12 @@ window.TREEID_DATA = {
     ],
     "name": "Balsam Fir",
     "sci": "Abies balsamea",
-    "zh": "胶冷杉，香脂冷杉"
+    "zh": "胶冷杉，香脂冷杉",
+    "zhText": {
+     "appearance": "窄圆锥形常绿树；针叶扁平，深绿色，背面有 2 条白色气孔带，叶尖微凹；叶看上去在枝条两侧大致排成两列；球果直立，有树脂。",
+     "location": "原产北美东北部，喜凉爽湿润的森林。",
+     "uses": "用作圣诞树，也用于木材和造纸。"
+    }
    },
    {
     "appearance": "Large tree; deeply lobed leaves, the basal two-thirds is narrower; large acorns with fringed caps.",
@@ -7930,7 +8142,12 @@ window.TREEID_DATA = {
     ],
     "name": "Bur Oak",
     "sci": "Quercus macrocarpa",
-    "zh": "大果栎"
+    "zh": "大果栎",
+    "zhText": {
+     "appearance": "大乔木；叶深裂，基部三分之二较窄；橡子大，壳斗边缘有流苏状鳞片。",
+     "location": "原产北美中部和东部，能适应多种土壤。",
+     "uses": "木材用于家具、地板和木桶。"
+    }
    },
    {
     "appearance": "Large deciduous tree with upright formal appearance; mottled bark; broad, deep lobed leaves; usually double fruit balls per stalk",
@@ -7967,7 +8184,12 @@ window.TREEID_DATA = {
     ],
     "name": "California Sycamore",
     "sci": "Platanus racemosa",
-    "zh": "加州悬铃木"
+    "zh": "加州悬铃木",
+    "zhText": {
+     "appearance": "高大的落叶乔木，树形挺拔端正；树皮斑驳；叶宽大、深裂；每个果柄上通常有两个果球。",
+     "location": "见于加州的河岸地带。",
+     "uses": "提供遮荫、防止水土流失，木材用于家具。"
+    }
    },
    {
     "appearance": "Large tree with deeply ridged bark and oblong, serrated leaves.",
@@ -8004,7 +8226,12 @@ window.TREEID_DATA = {
     ],
     "name": "Chestnut Oak",
     "sci": "Quercus prinus",
-    "zh": ""
+    "zh": "北美栗栎",
+    "zhText": {
+     "appearance": "大乔木，树皮有深纵脊，叶长圆形，有锯齿。",
+     "location": "生长在北美东部干燥多岩石的土壤中。",
+     "uses": "木材用于围栏和家具。"
+    }
    },
    {
     "appearance": "Large evergreen with soft, green needles and distinctive cones with three-pointed bracts.",
@@ -8041,151 +8268,236 @@ window.TREEID_DATA = {
     ],
     "name": "Douglas Fir",
     "sci": "Pseudotsuga menziesii",
-    "zh": ""
+    "zh": "花旗松",
+    "zhText": {
+     "appearance": "高大常绿树，针叶柔软、绿色，球果很有特点，苞鳞呈三叉状。",
+     "location": "见于北美西部，从沿海到山地森林。",
+     "uses": "最重要的用材树种之一，用于建筑和造纸。"
+    }
    },
    {
     "name": "Eastern Hemlock",
     "sci": "Tsuga canadensis",
-    "zh": "",
+    "zh": "加拿大铁杉",
     "photos": [],
     "appearance": "Graceful evergreen with short, flat needles and small, pendant cones.",
     "location": "Found in northeastern North America in cool, moist forests.",
-    "uses": "Wood is used for lumber and bark for tanning leather."
+    "uses": "Wood is used for lumber and bark for tanning leather.",
+    "zhText": {
+     "appearance": "姿态优美的常绿树，针叶短而扁平，球果小而下垂。",
+     "location": "见于北美东北部凉爽湿润的森林中。",
+     "uses": "木材用于制材，树皮用于鞣制皮革。"
+    }
    },
    {
     "name": "Eastern Red Cedar",
     "sci": "Juniperus virginiana",
-    "zh": "",
+    "zh": "北美圆柏",
     "photos": [],
     "appearance": "Small evergreen with scale-like leaves and blue, berry-like cones.",
     "location": "Found throughout eastern North America in dry, rocky areas.",
-    "uses": "Wood is used for fence posts, furniture, and cedar chests."
+    "uses": "Wood is used for fence posts, furniture, and cedar chests.",
+    "zhText": {
+     "appearance": "小型常绿树，叶鳞片状，球果蓝色、似浆果。",
+     "location": "遍布北美东部的干燥多岩石地区。",
+     "uses": "木材用于栅栏桩、家具和雪松木箱。"
+    }
    },
    {
     "name": "Engelmann Spruce",
     "sci": "Picea engelmannii",
-    "zh": "",
+    "zh": "恩氏云杉",
     "photos": [],
     "appearance": "Tall evergreen with slender, pointed crown and bluish-green needles.",
     "location": "Found in high-elevation forests of western North America.",
-    "uses": "Used for construction, musical instruments, and paper pulp."
+    "uses": "Used for construction, musical instruments, and paper pulp.",
+    "zhText": {
+     "appearance": "高大常绿树，树冠细长而尖，针叶蓝绿色。",
+     "location": "见于北美西部的高海拔森林中。",
+     "uses": "用于建筑、乐器和造纸用纸浆。"
+    }
    },
    {
     "name": "Flowering Dogwood",
     "sci": "Cornus florida",
-    "zh": "",
+    "zh": "大花四照花",
     "photos": [],
     "appearance": "Small tree with showy white or pink flowers and bright red berries.",
     "location": "Found in eastern North America, often in understory habitats.",
-    "uses": "Ornamental tree; berries provide food for wildlife."
+    "uses": "Ornamental tree; berries provide food for wildlife.",
+    "zhText": {
+     "appearance": "小乔木，开白色或粉色的艳丽花朵，结鲜红色浆果。",
+     "location": "见于北美东部，常生于林下。",
+     "uses": "观赏树，浆果是野生动物的食物。"
+    }
    },
    {
     "name": "Giant Sequoia",
     "sci": "Sequoiadendron giganteum",
-    "zh": "",
+    "zh": "巨杉",
     "photos": [],
     "appearance": "Massive tree with thick, reddish bark and small, scale-like leaves.",
     "location": "Native to the Sierra Nevada mountains of California.",
-    "uses": "Conservation and tourism; historically logged for timber."
+    "uses": "Conservation and tourism; historically logged for timber.",
+    "zhText": {
+     "appearance": "巨大的树，树皮厚，红色，叶小、鳞片状。",
+     "location": "原产加州内华达山脉。",
+     "uses": "用于保护和旅游，历史上曾被采伐作木材。"
+    }
    },
    {
     "name": "Jack Pine",
     "sci": "Pinus banksiana",
-    "zh": "",
+    "zh": "北美短叶松",
     "photos": [],
     "appearance": "Small to medium-sized pine with irregular form; short, twisted needles in pairs; serotinous cones that open after fire.",
     "location": "Found in sandy soils of northern North America.",
-    "uses": "Wood used for pulp, construction, and reforestation efforts."
+    "uses": "Wood used for pulp, construction, and reforestation efforts.",
+    "zhText": {
+     "appearance": "小到中型松树，树形不规则；针叶短，扭曲，两针一束；球果为迟开型，遇火后才张开。",
+     "location": "见于北美北部的沙质土壤中。",
+     "uses": "木材用于纸浆、建筑和重新造林。"
+    }
    },
    {
     "name": "Loblolly Pine",
     "sci": "Pinus taeda",
-    "zh": "",
+    "zh": "火炬松",
     "photos": [],
     "appearance": "Tall pine with long, dark green needles in clusters of three; large, scaly bark plates.",
     "location": "Common in the southeastern United States, thriving in acidic soils.",
-    "uses": "Major timber species used for paper, plywood, and lumber."
+    "uses": "Major timber species used for paper, plywood, and lumber.",
+    "zhText": {
+     "appearance": "高大的松树，针叶长，深绿色，三针一束；树皮呈大块鳞片状。",
+     "location": "常见于美国东南部，喜酸性土壤。",
+     "uses": "主要用材树种，用于造纸、胶合板和木材。"
+    }
    },
    {
     "name": "Mockernut Hickory",
     "sci": "Carya tomentosa",
-    "zh": "",
+    "zh": "毛山核桃",
     "photos": [],
     "appearance": "Medium to large tree with compound leaves; thick, hard nuts enclosed in a thick husk.",
     "location": "Native to the eastern United States in upland forests.",
-    "uses": "Wood used for tool handles, firewood, and smoking meats."
+    "uses": "Wood used for tool handles, firewood, and smoking meats.",
+    "zhText": {
+     "appearance": "中到大型乔木，复叶；坚果厚而坚硬，包在厚外壳里。",
+     "location": "原产美国东部的高地森林。",
+     "uses": "木材用于工具柄、柴火和熏肉。"
+    }
    },
    {
     "name": "Ponderosa Pine",
     "sci": "Pinus ponderosa",
-    "zh": "",
+    "zh": "西黄松",
     "photos": [],
     "appearance": "Large tree with long, dark green needles in clusters of three; thick, orange-brown bark with a vanilla scent.",
     "location": "Common in western North America in dry, mountainous areas.",
-    "uses": "Major timber species for construction and furniture."
+    "uses": "Major timber species for construction and furniture.",
+    "zhText": {
+     "appearance": "大乔木，针叶长，深绿色，三针一束；树皮厚，橙褐色，有香草味。",
+     "location": "常见于北美西部干燥的山区。",
+     "uses": "主要用材树种，用于建筑和家具。"
+    }
    },
    {
     "name": "Redwood",
     "sci": "Sequoia sempervirens",
-    "zh": "",
+    "zh": "北美红杉",
     "photos": [],
     "appearance": "Tallest tree species; evergreen with reddish-brown bark and soft, needle-like leaves.",
     "location": "Native to coastal California and Oregon.",
-    "uses": "Timber, conservation, and tourism."
+    "uses": "Timber, conservation, and tourism.",
+    "zhText": {
+     "appearance": "世界上最高的树种；常绿，树皮红褐色，叶柔软、似针。",
+     "location": "原产加州和俄勒冈沿海。",
+     "uses": "用于木材、保护和旅游。"
+    }
    },
    {
     "name": "Swamp White Oak",
     "sci": "Quercus bicolor",
-    "zh": "",
+    "zh": "二色栎",
     "photos": [],
     "appearance": "Medium to large tree with rounded lobed leaves that have a whitish underside; acorns are borne on long stalks.",
     "location": "Found in wet lowlands of eastern North America.",
-    "uses": "Wood used for barrels, furniture, and construction."
+    "uses": "Wood used for barrels, furniture, and construction.",
+    "zhText": {
+     "appearance": "中到大型乔木，叶裂片圆钝，背面发白；橡子生于长柄上。",
+     "location": "见于北美东部的潮湿低地。",
+     "uses": "木材用于木桶、家具和建筑。"
+    }
    },
    {
     "name": "Virginia Pine",
     "sci": "Pinus virginiana",
-    "zh": "",
+    "zh": "弗吉尼亚松",
     "photos": [],
     "appearance": "Small to medium-sized pine with short, twisted needles in pairs; scraggly form.",
     "location": "Native to the southeastern United States, often in poor soils.",
-    "uses": "Used for pulpwood, reforestation, and Christmas trees."
+    "uses": "Used for pulpwood, reforestation, and Christmas trees.",
+    "zhText": {
+     "appearance": "小到中型松树，针叶短，扭曲，两针一束；树形杂乱。",
+     "location": "原产美国东南部，常生于贫瘠土壤。",
+     "uses": "用于纸浆材、重新造林和圣诞树。"
+    }
    },
    {
     "name": "Western Hemlock",
     "sci": "Tsuga heterophylla",
-    "zh": "",
+    "zh": "异叶铁杉",
     "photos": [],
     "appearance": "Tall, graceful evergreen with drooping branch tips and small, delicate cones.",
     "location": "Found in moist forests of the Pacific Northwest.",
-    "uses": "Wood used for construction, paper, and furniture."
+    "uses": "Wood used for construction, paper, and furniture.",
+    "zhText": {
+     "appearance": "高大优美的常绿树，枝梢下垂，球果小而精致。",
+     "location": "见于太平洋西北地区的湿润森林中。",
+     "uses": "木材用于建筑、造纸和家具。"
+    }
    },
    {
     "name": "White Fir",
     "sci": "Abies concolor",
-    "zh": "",
+    "zh": "白冷杉",
     "photos": [],
     "appearance": "Medium to large evergreen with soft, bluish-green needles and cylindrical cones.",
     "location": "Found in western North America, especially in montane forests.",
-    "uses": "Wood used for construction, plywood, and paper production."
+    "uses": "Wood used for construction, plywood, and paper production.",
+    "zhText": {
+     "appearance": "中到大型常绿树，针叶柔软，蓝绿色，球果圆柱形。",
+     "location": "见于北美西部，尤其是山地森林。",
+     "uses": "木材用于建筑、胶合板和造纸。"
+    }
    },
    {
     "name": "White Spruce",
     "sci": "Picea glauca",
-    "zh": "",
+    "zh": "白云杉",
     "photos": [],
     "appearance": "Medium to large evergreen with stiff, bluish-green needles and cylindrical cones.",
     "location": "Found in northern North America, thriving in cold climates.",
-    "uses": "Used for pulpwood, construction, and musical instruments."
+    "uses": "Used for pulpwood, construction, and musical instruments.",
+    "zhText": {
+     "appearance": "中到大型常绿树，针叶坚硬，蓝绿色，球果圆柱形。",
+     "location": "见于北美北部，适应寒冷气候。",
+     "uses": "用于纸浆材、建筑和乐器。"
+    }
    },
    {
     "name": "Yellow Poplar",
     "sci": "Liriodendron tulipifera",
-    "zh": "",
+    "zh": "北美鹅掌楸",
     "photos": [],
     "appearance": "Large deciduous tree with distinctive tulip-shaped leaves and yellow-green flowers in spring.",
     "location": "Found in eastern North America in rich, moist soils.",
-    "uses": "Wood used for furniture, plywood, and musical instruments."
+    "uses": "Wood used for furniture, plywood, and musical instruments.",
+    "zhText": {
+     "appearance": "高大的落叶乔木，叶形独特似郁金香，春季开黄绿色花。",
+     "location": "见于北美东部肥沃湿润的土壤中。",
+     "uses": "木材用于家具、胶合板和乐器。"
+    }
    }
   ],
   "nationalPdf": "https://scioly.org/wiki/images/b/b9/Forestry_tree_list.pdf"
@@ -8211,6 +8523,17 @@ window.TREEID_DATA = {
    "src": "assets/img/f/245.webp",
    "w": 776,
    "h": 332
+  },
+  {
+   "id": "madcap",
+   "en": "MADCap Horse: trees and shrubs with opposite branching",
+   "zh": "MADCap Horse：枝条对生的乔木和灌木",
+   "src": "assets/img/fig/madcap-en.webp",
+   "w": 1650,
+   "h": 708,
+   "srcZh": "assets/img/fig/madcap-zh.webp",
+   "wZh": 1650,
+   "hZh": 716
   },
   {
    "en": "Parts of a leaf",

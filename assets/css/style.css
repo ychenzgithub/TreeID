@@ -226,3 +226,15 @@ footer a { color: var(--text-2); }
   .madcap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lb .prev, .lb .next { top: auto; bottom: 18px; }
 }
+
+/* Chinese mode: Chinese names first, English as a secondary line */
+html[data-lang="zh"] .tree-name .n-zh { order: -1; font: 700 1.1rem/1.25 var(--serif); color: var(--text); }
+html[data-lang="zh"] .tree-name .n-en { font: 500 .82rem/1.3 var(--font); color: var(--text-3); }
+.alt-name { font-style: normal; font-weight: 500; color: var(--text-3); }
+.part-card .lbl small.alt-name { font-size: .78rem; }
+
+/* Wide figure cards (MADCap Horse) */
+.fig-grid { grid-auto-flow: dense; }
+.fig.wide { grid-column: 1 / -1; }
+.fig.wide button { height: auto; display: block; }
+.fig.wide img { height: auto; max-width: 980px; margin: 0 auto; }

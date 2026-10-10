@@ -38,7 +38,8 @@
     return `<button type="button" data-set="${setId}" data-i="${i}" aria-label="${esc(alt)}"><img src="${img.src}" width="${img.w}" height="${img.h}" loading="lazy" decoding="async" alt="${esc(alt)}"></button>`;
   }
   function showLb() {
-    const it = lb.items[lb.i];
+    const base = lb.items[lb.i];
+    const it = lang === 'zh' && base.srcZh ? { ...base, src: base.srcZh, w: base.wZh, h: base.hZh } : base;
     const img = lb.el.querySelector('img');
     // Many source photos are small: enlarge up to 3× while fitting the screen.
     const k = Math.min(3, (window.innerWidth * 0.9) / it.w, (window.innerHeight * 0.72) / it.h);
@@ -46,7 +47,7 @@
     img.style.height = Math.round(it.h * k) + 'px';
     img.src = it.src;
     img.alt = it.alt || '';
-    lb.el.querySelector('.cap').innerHTML = `${it.title || ''}${it.credit ? `<small>${esc(it.credit)}</small>` : ''}<small>${lb.i + 1} / ${lb.items.length}</small>`;
+    lb.el.querySelector('.cap').innerHTML = `${it.title || ''}${it.credit ? `<small>${bi('Source: ', '来源：')}${esc(it.credit)}</small>` : ''}<small>${lb.i + 1} / ${lb.items.length}</small>`;
   }
   function openLb(items, i) { lb.items = items; lb.i = i; showLb(); lb.el.classList.add('open'); }
   function stepLb(d) { lb.i = (lb.i + d + lb.items.length) % lb.items.length; showLb(); }
@@ -109,7 +110,7 @@
       const withPart = trees.filter(t => t.photos[p.id].length);
       const set = makeSet(withPart.map(t => ({ ...t.photos[p.id][0], title: `${bi(t.en, t.zh)} · ${bi(p.en, p.zh)}`, alt: `${t.en} — ${p.en}` })));
       out.innerHTML = `<div class="atlas-grid">${withPart.map((t, i) =>
-        `<div class="part-card"><div class="cell${p.id === 'cartoon' ? ' contain' : ''}">${imgButton(set, i, t.photos[p.id][0], `${t.en} — ${p.en}`)}</div><div class="lbl">${esc(t.en)} <span class="zh zh-name">${esc(t.zh)}</span></div></div>`).join('')}</div>`;
+        `<div class="part-card"><div class="cell${p.id === 'cartoon' ? ' contain' : ''}">${imgButton(set, i, t.photos[p.id][0], `${t.en} — ${p.en}`)}</div><div class="lbl"><span class="en">${esc(t.en)}</span><span class="zh">${esc(t.zh)} <small class="alt-name">${esc(t.en)}</small></span></div></div>`).join('')}</div>`;
     }
   }
   function crossLinks(treeId) {
@@ -118,7 +119,7 @@
       if (g.atlas === treeId) links.push(`<a class="mini-link" href="#conifers">${bi('Conifer family tree', '针叶树分类')}</a>`);
     };
     C.conifers.families.forEach(f => { visit(f); (f.genera || []).forEach(visit); });
-    if (C.madcap.some(m => m.atlas === treeId)) links.push(`<a class="mini-link" href="#madcap-sec">MADCap Horse</a>`);
+    if (C.madcap.some(m => m.atlas === treeId)) links.push(`<a class="mini-link" href="#fig-madcap">MADCap Horse</a>`);
     return links.length ? `<span class="links">${[...new Set(links)].join('')}</span>` : '';
   }
   function renderAz() {
@@ -145,31 +146,40 @@
   }
   function spMatches(s, q) {
     if (!q) return true;
-    return [s.name, s.sci, s.zh, s.other, s.appearance].some(v => norm(v).includes(q));
+    const z = s.zhText || {};
+    return [s.name, s.sci, s.zh, s.other, s.appearance, z.appearance, z.other].some(v => norm(v).includes(q));
   }
   function fieldsHtml(s) {
+    const z = s.zhText || {};
+    const field = (en, zh, body) => `<div class="field"><b>${bi(en, zh)}:</b> ${body}</div>`;
+    const withLink = (text, link, url) => link && text.includes(link) ? esc(text).replace(esc(link), `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(link)}</a>`) : esc(text);
     let h = '';
-    if (s.appearance) h += `<div class="field"><b>${bi('Appearance', '外观')}:</b> ${esc(s.appearance)}</div>`;
-    if (s.location) h += `<div class="field"><b>${bi('Location', '分布')}:</b> ${esc(s.location)}</div>`;
-    if (s.uses) h += `<div class="field"><b>${bi('Uses', '用途')}:</b> ${esc(s.uses)}</div>`;
-    if (s.usesList) h += `<div class="field"><b>${bi('Uses', '用途')}:</b><ul>${s.usesList.map(u => `<li>${esc(u)}</li>`).join('')}</ul></div>`;
-    if (s.note) h += `<div class="field"><b>${bi('Note', '备注')}:</b> ${s.noteLink ? esc(s.note).replace(esc(s.noteLink.text), `<a href="${esc(s.noteLink.url)}" target="_blank" rel="noopener noreferrer">${esc(s.noteLink.text)}</a>`) : esc(s.note)}</div>`;
+    if (s.appearance) h += field('Appearance', '外观', bi(s.appearance, z.appearance));
+    if (s.location) h += field('Location', '分布', bi(s.location, z.location));
+    if (s.uses) h += field('Uses', '用途', bi(s.uses, z.uses));
+    if (s.usesList) h += `<div class="field"><b>${bi('Uses', '用途')}:</b><ul>${s.usesList.map((u, i) => `<li>${bi(u, z.usesList && z.usesList[i])}</li>`).join('')}</ul></div>`;
+    if (s.note) {
+      const url = s.noteLink && s.noteLink.url;
+      const en = withLink(s.note, s.noteLink && s.noteLink.text, url);
+      h += field('Note', '备注', z.note ? `<span class="en">${en}</span><span class="zh">${withLink(z.note, z.noteLink, url)}</span>` : en);
+    }
     return h;
   }
   const YT = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>';
   function spCard(s, opts = {}) {
     const imgs = [...s.photos, ...(s.gallery || [])];
-    const set = makeSet(imgs.map(im => ({ ...im, title: `${esc(s.name)} <i>(${esc(s.sci)})</i>${s.zh ? ` <span class="zh">${esc(s.zh)}</span>` : ''}`, alt: s.name })));
+    const z = s.zhText || {};
+    const set = makeSet(imgs.map(im => ({ ...im, title: `${bi(s.name, s.zh || s.name)} <i>${esc(s.sci)}</i>`, alt: s.name })));
     const tags = opts.tags ? keyGroupsOf(s.n).map(t => `<span class="tag">${bi(t, zhOf(t))}</span>`).join('') : '';
     return `<article class="sp-card" ${s.n ? `id="sp-${s.n}"` : ''}>
-      <div class="sp-head">${s.n ? `<div class="sp-num">${s.n}</div>` : ''}<div class="sp-title"><h3>${esc(s.name)}<span class="zh zh-name">${esc(s.zh)}</span></h3><div class="sci">${esc(s.sci)}</div>${s.other ? `<div class="other">${bi('Also called', '别名')}: ${esc(s.other)}</div>` : ''}</div></div>
+      <div class="sp-head">${s.n ? `<div class="sp-num">${s.n}</div>` : ''}<div class="sp-title"><h3>${bi(s.name, s.zh || s.name)}</h3><div class="sci"><span class="zh alt-name">${esc(s.name)} · </span>${esc(s.sci)}</div>${s.other ? `<div class="other">${bi('Also called', '别名')}: ${bi(s.other, z.other)}</div>` : ''}</div></div>
       ${imgs.length ? `<div class="strip">${imgs.map((im, i) => imgButton(set, i, im, s.name)).join('')}</div>` : ''}
-      <div class="sp-body">${fieldsHtml(s)}${tags ? `<div class="tags">${tags}</div>` : ''}${s.video ? `<a class="video" href="${esc(s.video.url)}" target="_blank" rel="noopener noreferrer">${YT}${esc(s.video.title)}</a>` : ''}</div>
+      <div class="sp-body">${fieldsHtml(s)}${tags ? `<div class="tags">${tags}</div>` : ''}${s.video ? `<a class="video" href="${esc(s.video.url)}" target="_blank" rel="noopener noreferrer">${YT}${bi(s.video.title, '识别视频：' + (s.zh || s.name))}</a>` : ''}</div>
     </article>`;
   }
   function compareCard(c) {
     const set = makeSet(c.images.map(im => ({ ...im, title: bi(c.title, zhOf(c.title)), alt: c.title })));
-    return `<div class="compare"><h4>${bi('Look-alikes', '易混树种')} · ${bi(c.title, zhOf(c.title))}</h4><div class="figs">${c.images.map((im, i) => imgButton(set, i, im, c.title)).join('')}</div>${c.link ? `<p style="margin:10px 0 0"><a href="${esc(c.link.url)}" target="_blank" rel="noopener noreferrer">${esc(c.link.text)}</a></p>` : ''}</div>`;
+    return `<div class="compare"><h4>${bi('Look-alikes', '易混树种')} · ${bi(c.title, zhOf(c.title))}</h4><div class="figs">${c.images.map((im, i) => imgButton(set, i, im, c.title)).join('')}</div>${c.link ? `<p style="margin:10px 0 0"><a href="${esc(c.link.url)}" target="_blank" rel="noopener noreferrer">${bi(c.link.text, c.link.textZh)}</a></p>` : ''}</div>`;
   }
   function renderForest() {
     const q = norm(forest.q.trim());
@@ -198,34 +208,34 @@
   }
   function renderConifers() {
     const P = C.conifers;
-    $('#tax-path').innerHTML = P.path.map((n, i) => `${i ? '<span class="tax-arrow">→</span>' : ''}<span class="tax-node"><i>${esc(n.en)}</i> <span class="zh">${esc(n.zh)}</span></span>`).join('');
+    const latinOf = str => (str.match(/[A-Z][a-z]+ [a-z]+/) || [str])[0];
+    const zhLa = (en, zh, la) => `<span class="en"><i>${esc(en)}</i></span><span class="zh">${esc(zh)} <i>${esc(la || en)}</i></span>`;
+    $('#tax-path').innerHTML = P.path.map((n, i) => `${i ? '<span class="tax-arrow">→</span>' : ''}<span class="tax-node">${zhLa(n.en, n.zh)}</span>`).join('');
     const links = g => [
       g.atlas ? `<a class="mini-link" href="#tree-${g.atlas}" data-tree="${g.atlas}">${bi('Photos', '照片')}</a>` : '',
       g.sp ? `<a class="mini-link" href="#sp-${g.sp}" data-sp="${g.sp}">SciOly #${g.sp}</a>` : '',
     ].join(' ');
-    const spList = list => list ? `<ul>${list.map(s => `<li>${esc(s.en)}${s.zh ? ` <span class="zh">${esc(s.zh)}</span>` : ''} ${s.sp ? `<a class="mini-link" href="#sp-${s.sp}" data-sp="${s.sp}">#${s.sp}</a>` : ''}</li>`).join('')}</ul>` : '';
-    const genus = g => `<div class="genus"><div class="g-name"><i>${esc(g.en)}</i> <span class="zh">${esc(g.zh)}</span> ${links(g)}</div>${(g.groups || []).map(gr => `<div class="sub">${bi(gr.en, gr.zh + '：' + gr.en)}</div>${spList(gr.species)}`).join('')}${spList(g.species)}</div>`;
+    const spList = list => list ? `<ul>${list.map(s => `<li>${s.zh ? `<span class="en">${esc(s.en)}</span><span class="zh">${esc(s.zh)} <i>${esc(latinOf(s.en))}</i></span>` : esc(s.en)} ${s.sp ? `<a class="mini-link" href="#sp-${s.sp}" data-sp="${s.sp}">#${s.sp}</a>` : ''}</li>`).join('')}</ul>` : '';
+    const genus = g => `<div class="genus"><div class="g-name">${zhLa(g.en, g.zh, g.en.split(' ')[0])} ${links(g)}</div>${(g.groups || []).map(gr => `<div class="sub"><span class="en">${esc(gr.en)}</span><span class="zh">${esc(gr.zh)} <i>${esc(gr.la)}</i></span></div>${spList(gr.species)}`).join('')}${spList(g.species)}</div>`;
     $('#families').innerHTML = P.families.map(f => {
       const thumbId = f.atlas || (f.genera || []).map(g => g.atlas).find(Boolean);
       const src = thumbId && thumbFor(thumbId);
-      return `<div class="family"><h4>${src ? `<img src="${src}" alt="" loading="lazy">` : ''}<span><i>${esc(f.en)}</i> <span class="zh">${esc(f.zh)}</span></span></h4>${(f.genera || []).map(genus).join('')}${f.genera ? '' : `<div class="genus">${links(f)}${spList(f.species)}</div>`}</div>`;
+      return `<div class="family"><h4>${src ? `<img src="${src}" alt="" loading="lazy">` : ''}<span>${zhLa(f.en, f.zh)}</span></h4>${(f.genera || []).map(genus).join('')}${f.genera ? '' : `<div class="genus">${links(f)}${spList(f.species)}</div>`}</div>`;
     }).join('');
   }
   function renderFigures() {
     const set = makeSet(D.figures.map(f => ({ ...f, title: bi(f.en, f.zh), alt: f.en })));
-    $('#figures').innerHTML = D.figures.map((f, i) => `<div class="fig">${imgButton(set, i, f, f.en)}<div class="lbl">${bi(f.en, f.zh)}</div></div>`).join('');
-  }
-  function renderTips() {
-    $('#madcap').innerHTML = C.madcap.map(m => {
-      const src = m.atlas && thumbFor(m.atlas, 'leaf');
-      const inner = `<div class="letter">${esc(m.letter)}</div>${src ? `<img src="${src}" alt="" loading="lazy">` : ''}<div class="t">${bi(m.en, m.zh)}</div>`;
-      return m.atlas ? `<a class="mc" href="#tree-${m.atlas}" data-tree="${m.atlas}" style="text-decoration:none;color:inherit">${inner}</a>` : `<div class="mc">${inner}</div>`;
+    $('#figures').innerHTML = D.figures.map((f, i) => {
+      const pic = f.srcZh
+        ? `<button type="button" data-set="${set}" data-i="${i}" aria-label="${esc(f.en)}"><img class="en" src="${f.src}" width="${f.w}" height="${f.h}" loading="lazy" alt="${esc(f.en)}"><img class="zh" src="${f.srcZh}" width="${f.wZh}" height="${f.hZh}" loading="lazy" alt="${esc(f.en)}"></button>`
+        : imgButton(set, i, f, f.en);
+      return `<div class="fig${f.srcZh ? ' wide' : ''}"${f.id ? ` id="fig-${f.id}"` : ''}>${pic}<div class="lbl">${bi(f.en, f.zh)}</div></div>`;
     }).join('');
   }
   function renderLinks() {
-    const card = (k, title, url, d) => `<a class="link-card" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><span class="k">${k}</span><strong>${esc(title)}</strong><span class="d">${d}</span></a>`;
-    $('#maps').innerHTML = C.maps.map(m => card(bi(m.city, m.cityZh), m.title, m.url, bi(m.en, m.zh))).join('');
-    $('#tools').innerHTML = C.tools.map(t => card(t.kind ? bi(t.kind.en, t.kind.zh) : bi('Tool', '工具'), t.name, t.url, bi(t.en, t.zh))).join('');
+    const card = (k, title, url, d) => `<a class="link-card" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><span class="k">${k}</span><strong>${title}</strong><span class="d">${d}</span></a>`;
+    $('#maps').innerHTML = C.maps.map(m => card(bi(m.city, m.cityZh), bi(m.title, m.titleZh), m.url, bi(m.en, m.zh))).join('');
+    $('#tools').innerHTML = C.tools.map(t => card(t.kind ? bi(t.kind.en, t.kind.zh) : bi('Tool', '工具'), bi(t.name, t.nameZh || t.name), t.url, bi(t.en, t.zh))).join('');
   }
 
   // ---------------------------------------------------------------- events
@@ -282,7 +292,7 @@
     $('#atlas-parts').innerHTML = [{ id: 'all', en: 'All parts', zh: '全部' }, ...PARTS].map(p => `<button type="button" data-part="${p.id}">${bi(p.en, p.zh)}</button>`).join('');
     renderHero(); renderAz(); renderAtlas();
     renderKeys(); renderForest();
-    renderConifers(); renderFigures(); renderTips(); renderLinks();
+    renderConifers(); renderFigures(); renderLinks();
     bind();
     applyLang(lang);
   });
