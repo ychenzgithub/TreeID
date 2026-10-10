@@ -31,10 +31,7 @@ window.TREEID_CONTENT = {
     { name: 'Tree guide', url: 'http://www.tree-guide.com/', en: 'tree guide | about trees', zh: '树木指南' },
     { name: 'Pl@ntNet', url: 'https://identify.plantnet.org/', en: 'Identify, explore and share your observations of wild plants', zh: '拍照识别、探索与分享野生植物观察' },
     { name: 'iNaturalist', url: 'https://www.inaturalist.org/', en: 'iNaturalist', zh: '自然观察记录与物种识别' },
-  ],
-  webpages: [
-    { name: 'Urban tree species directory', url: 'https://www.friendsoftheurbanforest.org/tree-species-directory-sf', en: 'Tree Species Directory | Friends of the Urban Forest', zh: '城市树种名录（旧金山 Friends of the Urban Forest）' },
-    { name: 'UCI sustainable landscape program', url: 'https://planningandsustainability.uci.edu/physical/landscape-plan.php', en: 'UCI Sustainable Landscape Program, Campus Planning & Sustainability', zh: 'UCI 可持续景观计划' },
+    { name: 'Urban tree species directory', url: 'https://www.friendsoftheurbanforest.org/tree-species-directory-sf', en: 'Tree Species Directory | Friends of the Urban Forest', zh: '城市树种名录（旧金山 Friends of the Urban Forest）', kind: { en: 'Directory', zh: '名录' } },
   ],
 
   // Tip: trees with opposite branching

@@ -67,8 +67,8 @@
     const stats = [
       [D.common.length, 'common trees', '种常见树'],
       [atlasPhotos, 'atlas photos', '张图鉴照片'],
-      [SP.length, 'Science Olympiad species', '个 Science Olympiad 树种'],
-      [D.scioly.national.length, 'national-list species', '个全国赛树种'],
+      [SP.length + D.scioly.national.length, 'SciOly Forest Finds species', '个 SciOly Forest Finds 树种'],
+      [D.figures.length, 'botany reference figures', '张植物学参考图'],
     ];
     $('#stats').innerHTML = stats.map(([n, en, zh]) => `<div class="stat"><b>${n}</b><span>${bi(en, zh)}</span></div>`).join('');
     const comparePhotos = D.scioly.comparisons.reduce((a, c) => a + c.images.length, 0);
@@ -118,7 +118,7 @@
       if (g.atlas === treeId) links.push(`<a class="mini-link" href="#conifers">${bi('Conifer family tree', '针叶树分类')}</a>`);
     };
     C.conifers.families.forEach(f => { visit(f); (f.genera || []).forEach(visit); });
-    if (C.madcap.some(m => m.atlas === treeId)) links.push(`<a class="mini-link" href="#tips">MADCap Horse</a>`);
+    if (C.madcap.some(m => m.atlas === treeId)) links.push(`<a class="mini-link" href="#madcap-sec">MADCap Horse</a>`);
     return links.length ? `<span class="links">${[...new Set(links)].join('')}</span>` : '';
   }
   function renderAz() {
@@ -185,9 +185,10 @@
     document.querySelectorAll('.key-chip').forEach(b => b.classList.toggle('on', forest.filters[b.dataset.k] === +b.dataset.g));
     $('#forest-count').innerHTML = bi(`${visible.length} of ${SP.length} species`, `显示 ${visible.length} / ${SP.length} 个树种`);
     $('#forest-clear').classList.toggle('hidden', !filtering);
-  }
-  function renderNational() {
-    $('#national').innerHTML = D.scioly.national.map(s => spCard(s)).join('');
+    // The extra forestry species have no key data: hide them while a key is selected; search applies to them too.
+    const more = active.length ? [] : D.scioly.national.filter(s => spMatches(s, q));
+    $('#more-species').classList.toggle('hidden', !more.length);
+    $('#national').innerHTML = more.map(s => spCard(s)).join('');
   }
 
   // ---------------------------------------------------------------- conifers, figures, tips, links
@@ -224,8 +225,7 @@
   function renderLinks() {
     const card = (k, title, url, d) => `<a class="link-card" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><span class="k">${k}</span><strong>${esc(title)}</strong><span class="d">${d}</span></a>`;
     $('#maps').innerHTML = C.maps.map(m => card(bi(m.city, m.cityZh), m.title, m.url, bi(m.en, m.zh))).join('');
-    $('#tools').innerHTML = C.tools.map(t => card(bi('Tool', '工具'), t.name, t.url, bi(t.en, t.zh))).join('');
-    $('#webpages').innerHTML = C.webpages.map(w => card(bi('Webpage', '网页'), w.name, w.url, bi(w.en, w.zh))).join('');
+    $('#tools').innerHTML = C.tools.map(t => card(t.kind ? bi(t.kind.en, t.kind.zh) : bi('Tool', '工具'), t.name, t.url, bi(t.en, t.zh))).join('');
   }
 
   // ---------------------------------------------------------------- events
@@ -281,7 +281,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     $('#atlas-parts').innerHTML = [{ id: 'all', en: 'All parts', zh: '全部' }, ...PARTS].map(p => `<button type="button" data-part="${p.id}">${bi(p.en, p.zh)}</button>`).join('');
     renderHero(); renderAz(); renderAtlas();
-    renderKeys(); renderForest(); renderNational();
+    renderKeys(); renderForest();
     renderConifers(); renderFigures(); renderTips(); renderLinks();
     bind();
     applyLang(lang);

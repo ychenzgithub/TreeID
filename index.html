@@ -18,11 +18,8 @@
     <a class="brand" href="#top"><img src="assets/img/logo.svg" alt=""><span><span class="en">Tree ID</span><span class="zh">树木识别</span></span></a>
     <nav class="top-nav" aria-label="Sections">
       <a href="#atlas-sec"><span class="en">Photo atlas</span><span class="zh">常见树图鉴</span></a>
-      <a href="#forest-sec"><span class="en">Science Olympiad</span><span class="zh">Science Olympiad</span></a>
-      <a href="#national-sec"><span class="en">National list</span><span class="zh">全国赛名单</span></a>
-      <a href="#conifers"><span class="en">Conifers</span><span class="zh">针叶树</span></a>
+      <a href="#forest-sec">SciOly Forest Finds</a>
       <a href="#basics"><span class="en">Botany basics</span><span class="zh">植物学基础</span></a>
-      <a href="#tips"><span class="en">Tips</span><span class="zh">小技巧</span></a>
       <a href="#maps-sec"><span class="en">Maps &amp; tools</span><span class="zh">地图与工具</span></a>
     </nav>
     <button id="lang-toggle" class="icon-btn" type="button" title="Switch to Chinese">
@@ -42,7 +39,7 @@
       <div class="stats" id="stats"></div>
       <div class="btn-row">
         <a class="btn primary" href="#atlas-sec"><span class="en">Browse the photo atlas</span><span class="zh">浏览常见树图鉴</span></a>
-        <a class="btn" href="#forest-sec"><span class="en">Science Olympiad species</span><span class="zh">Science Olympiad 树种</span></a>
+        <a class="btn" href="#forest-sec">SciOly Forest Finds</a>
       </div>
     </div>
     <div class="mosaic" id="mosaic"></div>
@@ -66,13 +63,13 @@
     <div id="atlas"></div>
   </section>
 
-  <!-- Science Olympiad: Forest Finds -->
+  <!-- SciOly Forest Finds -->
   <section class="block" id="forest-sec">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">Science Olympiad · Division A · Forest Finds</div>
-        <h2><span class="en">Tree species for Forest Finds</span><span class="zh">Forest Finds 树种清单</span></h2>
-        <p class="sec-desc"><span class="en">The 33 species on the Division A list, each with appearance, location, uses and an ID video. Filter them with the identification keys (leaf shape, leaf arrangement, cones and fruits); look-alike comparisons appear right after the species they belong to.</span><span class="zh">Division A 名单上的 33 个树种，每种都有外观、分布、用途和识别视频。可以用检索表（叶形、叶序、球果与果实）筛选；易混树种的对比图紧跟在对应树种之后。树种描述保留原文（英文）。</span></p>
+        <div class="eyebrow">Science Olympiad</div>
+        <h2>SciOly Forest Finds</h2>
+        <p class="sec-desc"><span class="en">The 33 species on the Division A list, each with appearance, location, uses and an ID video. Filter them with the identification keys (leaf shape, leaf arrangement, cones and fruits); look-alike comparisons appear right after the species they belong to. More forestry species follow below the list.</span><span class="zh">Division A 名单上的 33 个树种，每种都有外观、分布、用途和识别视频。可以用检索表（叶形、叶序、球果与果实）筛选；易混树种的对比图紧跟在对应树种之后。名单之后还有更多林木树种的笔记。树种描述保留原文（英文）。</span></p>
       </div>
     </div>
     <h3 class="sub-h" id="keys-h"><span class="en">Identification keys</span><span class="zh">按检索表分类</span></h3>
@@ -83,59 +80,41 @@
       <button type="button" class="clear-btn hidden" id="forest-clear"><span class="en">Clear filters</span><span class="zh">清除筛选</span></button>
     </div>
     <div class="species-grid" id="species"></div>
-  </section>
-
-  <!-- 2004 national list -->
-  <section class="block" id="national-sec">
-    <div class="sec-head">
-      <div>
-        <div class="eyebrow">Science Olympiad · Forestry</div>
-        <h2><span class="en">2004 National Tournament specimen list</span><span class="zh">2004 年全国赛 Forestry 标本名单</span></h2>
-        <p class="sec-desc"><span class="en">Notes on species from the 2004 national Forestry list.</span><span class="zh">2004 年全国赛 Forestry 名单中部分树种的笔记。</span></p>
+    <div id="more-species">
+      <div class="sub-head">
+        <h3 class="sub-h"><span class="en">More forestry species</span><span class="zh">更多林木树种</span></h3>
+        <a class="chip-link" id="national-pdf" href="" target="_blank" rel="noopener noreferrer"><span class="en">Forestry tree list (PDF) ↗</span><span class="zh">Forestry 树种名单（PDF）↗</span></a>
       </div>
-      <a class="chip-link" id="national-pdf" href="" target="_blank" rel="noopener noreferrer"><span class="en">Full list (PDF) ↗</span><span class="zh">完整名单（PDF）↗</span></a>
+      <div class="nat-grid" id="national"></div>
     </div>
-    <div class="nat-grid" id="national"></div>
   </section>
 
-  <!-- Conifers -->
-  <section class="block" id="conifers">
-    <div class="sec-head">
-      <div>
-        <div class="eyebrow"><span class="en">Classification</span><span class="zh">分类</span></div>
-        <h2><span class="en">Conifers</span><span class="zh">针叶树</span></h2>
-        <p class="sec-desc"><span class="en">How the conifers in this guide are related, from division down to genus and species. Links jump to their photos.</span><span class="zh">本指南中针叶树的分类关系，从门到属和种。点击链接可跳转到对应照片。</span></p>
-      </div>
-    </div>
-    <div class="tax-path" id="tax-path"></div>
-    <div class="families" id="families"></div>
-  </section>
-
-  <!-- Botany basics -->
+  <!-- Botany basics: reference figures, MADCap Horse, conifer classification -->
   <section class="block" id="basics">
     <div class="sec-head">
       <div>
-        <div class="eyebrow"><span class="en">Reference figures</span><span class="zh">参考图</span></div>
+        <div class="eyebrow"><span class="en">Reference</span><span class="zh">参考</span></div>
         <h2><span class="en">Botany basics</span><span class="zh">植物学基础</span></h2>
-        <p class="sec-desc"><span class="en">Leaf shapes, margins and arrangements, the parts of a leaf, twig, flower and trunk, and a few comparison charts.</span><span class="zh">叶形、叶缘、单叶与复叶，叶、枝条、花和树干的结构，以及几张对比图。</span></p>
+        <p class="sec-desc"><span class="en">Reference figures for leaves, twigs, flowers and trunks, a mnemonic for trees with opposite branching, and how the conifers are classified.</span><span class="zh">叶、枝条、花和树干的参考图，枝条对生树木的记忆口诀，以及针叶树的分类。</span></p>
       </div>
     </div>
     <div class="fig-grid" id="figures"></div>
-  </section>
 
-  <!-- Tips -->
-  <section class="block" id="tips">
-    <div class="sec-head">
-      <div>
-        <div class="eyebrow"><span class="en">Tips</span><span class="zh">小技巧</span></div>
-        <h2>MADCap Horse</h2>
-        <p class="sec-desc"><span class="en">Trees and shrubs with opposite branching include:</span><span class="zh">枝条对生的乔木和灌木包括：</span></p>
-      </div>
+    <div id="madcap-sec">
+      <h3 class="sub-h">MADCap Horse</h3>
+      <p class="sec-desc sub-desc"><span class="en">Trees and shrubs with opposite branching include:</span><span class="zh">枝条对生的乔木和灌木包括：</span></p>
+      <div class="madcap" id="madcap"></div>
     </div>
-    <div class="madcap" id="madcap"></div>
+
+    <div id="conifers">
+      <h3 class="sub-h"><span class="en">Conifer classification</span><span class="zh">针叶树分类</span></h3>
+      <p class="sec-desc sub-desc"><span class="en">How the conifers in this guide are related, from division down to genus and species. Links jump to their photos.</span><span class="zh">本指南中针叶树的分类关系，从门到属和种。点击链接可跳转到对应照片。</span></p>
+      <div class="tax-path" id="tax-path"></div>
+      <div class="families" id="families"></div>
+    </div>
   </section>
 
-  <!-- Maps, tools, webpages -->
+  <!-- Maps and tools -->
   <section class="block" id="maps-sec">
     <div class="sec-head">
       <div>
@@ -147,8 +126,6 @@
     <div class="link-grid" id="maps"></div>
     <h3 class="sub-h"><span class="en">Apps and web tools</span><span class="zh">应用与在线工具</span></h3>
     <div class="link-grid" id="tools"></div>
-    <h3 class="sub-h"><span class="en">Webpages</span><span class="zh">网页</span></h3>
-    <div class="link-grid" id="webpages"></div>
   </section>
 
   <footer>
