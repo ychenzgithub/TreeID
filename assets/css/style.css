@@ -233,8 +233,3 @@ html[data-lang="zh"] .tree-name .n-en { font: 500 .82rem/1.3 var(--font); color:
 .alt-name { font-style: normal; font-weight: 500; color: var(--text-3); }
 .part-card .lbl small.alt-name { font-size: .78rem; }
 
-/* Wide figure cards (MADCap Horse) */
-.fig-grid { grid-auto-flow: dense; }
-.fig.wide { grid-column: 1 / -1; }
-.fig.wide button { height: auto; display: block; }
-.fig.wide img { height: auto; max-width: 980px; margin: 0 auto; }

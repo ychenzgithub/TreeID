@@ -8526,7 +8526,7 @@ window.TREEID_DATA = {
   },
   {
    "id": "madcap",
-   "en": "MADCap Horse: trees and shrubs with opposite branching",
+   "en": "MADCap Horse: opposite branching",
    "zh": "MADCap Horse：枝条对生的乔木和灌木",
    "src": "assets/img/fig/madcap-en.webp",
    "w": 1650,

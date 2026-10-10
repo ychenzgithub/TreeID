@@ -229,7 +229,7 @@
       const pic = f.srcZh
         ? `<button type="button" data-set="${set}" data-i="${i}" aria-label="${esc(f.en)}"><img class="en" src="${f.src}" width="${f.w}" height="${f.h}" loading="lazy" alt="${esc(f.en)}"><img class="zh" src="${f.srcZh}" width="${f.wZh}" height="${f.hZh}" loading="lazy" alt="${esc(f.en)}"></button>`
         : imgButton(set, i, f, f.en);
-      return `<div class="fig${f.srcZh ? ' wide' : ''}"${f.id ? ` id="fig-${f.id}"` : ''}>${pic}<div class="lbl">${bi(f.en, f.zh)}</div></div>`;
+      return `<div class="fig"${f.id ? ` id="fig-${f.id}"` : ''}>${pic}<div class="lbl">${bi(f.en, f.zh)}</div></div>`;
     }).join('');
   }
   function renderLinks() {
