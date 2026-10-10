@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree ID — A Photo Guide to Identifying Trees</title>
+  <meta name="description" content="A photo guide to identifying trees: 92 common trees shown by whole tree, leaf, flower, fruit and bark; 33 Science Olympiad species with identification keys and look-alikes; conifer families; tree maps and ID tools.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top"><img src="assets/img/logo.svg" alt=""><span><span class="en">Tree ID</span><span class="zh">树木识别</span></span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#atlas-sec"><span class="en">Photo atlas</span><span class="zh">常见树图鉴</span></a>
+      <a href="#forest-sec"><span class="en">Science Olympiad</span><span class="zh">Science Olympiad</span></a>
+      <a href="#national-sec"><span class="en">National list</span><span class="zh">全国赛名单</span></a>
+      <a href="#conifers"><span class="en">Conifers</span><span class="zh">针叶树</span></a>
+      <a href="#basics"><span class="en">Botany basics</span><span class="zh">植物学基础</span></a>
+      <a href="#tips"><span class="en">Tips</span><span class="zh">小技巧</span></a>
+      <a href="#maps-sec"><span class="en">Maps &amp; tools</span><span class="zh">地图与工具</span></a>
+    </nav>
+    <button id="lang-toggle" class="icon-btn" type="button" title="Switch to Chinese">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      <span class="lbl">ZH</span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="en">A photo field guide</span><span class="zh">树木识别图鉴</span></div>
+      <h1><span class="en">Tree identification</span><span class="zh">树木识别</span></h1>
+      <p class="lead"><span class="en">Learn trees the way you meet them: the whole tree, a leaf, a flower, a fruit and the bark. Then go deeper with the Science Olympiad tree lists, identification keys, look-alike comparisons and conifer families.</span><span class="zh">从整体、叶、花、果和树皮五个角度认识常见的树；再通过 Science Olympiad 树种清单、检索表、易混树种对比和针叶树分类进一步学习。</span></p>
+      <div class="stats" id="stats"></div>
+      <div class="btn-row">
+        <a class="btn primary" href="#atlas-sec"><span class="en">Browse the photo atlas</span><span class="zh">浏览常见树图鉴</span></a>
+        <a class="btn" href="#forest-sec"><span class="en">Science Olympiad species</span><span class="zh">Science Olympiad 树种</span></a>
+      </div>
+    </div>
+    <div class="mosaic" id="mosaic"></div>
+  </section>
+
+  <!-- Photo atlas -->
+  <section class="block" id="atlas-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Photo collection</span><span class="zh">图片集</span></div>
+        <h2><span class="en">Common trees</span><span class="zh">常见树列表</span></h2>
+        <p class="sec-desc"><span class="en">Each tree is shown six ways: the whole tree, a cartoon, the leaf, flower, fruit and bark. Pick one part to compare it across all trees, and click any picture to enlarge it.</span><span class="zh">每种树都有六张图：整体、卡通、叶、花、果、树皮。选择一个部位可以横向比较所有树；点击任意图片可放大查看。</span></p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="atlas-search" type="search" data-ph-en="Search trees (English or Chinese name)" data-ph-zh="搜索树名（中文或英文）" placeholder="Search trees (English or Chinese name)"></label>
+      <div class="seg" id="atlas-parts" role="tablist" aria-label="Plant part"></div>
+      <span class="count" id="atlas-count"></span>
+      <div class="az" id="az" aria-label="Jump to letter"></div>
+    </div>
+    <div id="atlas"></div>
+  </section>
+
+  <!-- Science Olympiad: Forest Finds -->
+  <section class="block" id="forest-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Science Olympiad · Division A · Forest Finds</div>
+        <h2><span class="en">Tree species for Forest Finds</span><span class="zh">Forest Finds 树种清单</span></h2>
+        <p class="sec-desc"><span class="en">The 33 species on the Division A list, each with appearance, location, uses and an ID video. Filter them with the identification keys (leaf shape, leaf arrangement, cones and fruits); look-alike comparisons appear right after the species they belong to.</span><span class="zh">Division A 名单上的 33 个树种，每种都有外观、分布、用途和识别视频。可以用检索表（叶形、叶序、球果与果实）筛选；易混树种的对比图紧跟在对应树种之后。树种描述保留原文（英文）。</span></p>
+      </div>
+    </div>
+    <h3 class="sub-h" id="keys-h"><span class="en">Identification keys</span><span class="zh">按检索表分类</span></h3>
+    <div class="keys" id="keys"></div>
+    <div class="filter-bar">
+      <label class="search" style="max-width:420px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="forest-search" type="search" data-ph-en="Search species, scientific names, features" data-ph-zh="搜索树种、学名或特征" placeholder="Search species, scientific names, features"></label>
+      <span class="count" id="forest-count"></span>
+      <button type="button" class="clear-btn hidden" id="forest-clear"><span class="en">Clear filters</span><span class="zh">清除筛选</span></button>
+    </div>
+    <div class="species-grid" id="species"></div>
+  </section>
+
+  <!-- 2004 national list -->
+  <section class="block" id="national-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Science Olympiad · Forestry</div>
+        <h2><span class="en">2004 National Tournament specimen list</span><span class="zh">2004 年全国赛 Forestry 标本名单</span></h2>
+        <p class="sec-desc"><span class="en">Notes on species from the 2004 national Forestry list.</span><span class="zh">2004 年全国赛 Forestry 名单中部分树种的笔记。</span></p>
+      </div>
+      <a class="chip-link" id="national-pdf" href="" target="_blank" rel="noopener noreferrer"><span class="en">Full list (PDF) ↗</span><span class="zh">完整名单（PDF）↗</span></a>
+    </div>
+    <div class="nat-grid" id="national"></div>
+  </section>
+
+  <!-- Conifers -->
+  <section class="block" id="conifers">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Classification</span><span class="zh">分类</span></div>
+        <h2><span class="en">Conifers</span><span class="zh">针叶树</span></h2>
+        <p class="sec-desc"><span class="en">How the conifers in this guide are related, from division down to genus and species. Links jump to their photos.</span><span class="zh">本指南中针叶树的分类关系，从门到属和种。点击链接可跳转到对应照片。</span></p>
+      </div>
+    </div>
+    <div class="tax-path" id="tax-path"></div>
+    <div class="families" id="families"></div>
+  </section>
+
+  <!-- Botany basics -->
+  <section class="block" id="basics">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Reference figures</span><span class="zh">参考图</span></div>
+        <h2><span class="en">Botany basics</span><span class="zh">植物学基础</span></h2>
+        <p class="sec-desc"><span class="en">Leaf shapes, margins and arrangements, the parts of a leaf, twig, flower and trunk, and a few comparison charts.</span><span class="zh">叶形、叶缘、单叶与复叶，叶、枝条、花和树干的结构，以及几张对比图。</span></p>
+      </div>
+    </div>
+    <div class="fig-grid" id="figures"></div>
+  </section>
+
+  <!-- Tips -->
+  <section class="block" id="tips">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Tips</span><span class="zh">小技巧</span></div>
+        <h2>MADCap Horse</h2>
+        <p class="sec-desc"><span class="en">Trees and shrubs with opposite branching include:</span><span class="zh">枝条对生的乔木和灌木包括：</span></p>
+      </div>
+    </div>
+    <div class="madcap" id="madcap"></div>
+  </section>
+
+  <!-- Maps, tools, webpages -->
+  <section class="block" id="maps-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Explore</span><span class="zh">延伸</span></div>
+        <h2><span class="en">Tree maps</span><span class="zh">城市树木地图</span></h2>
+        <p class="sec-desc"><span class="en">Cities that map every street tree.</span><span class="zh">这些城市把街道上的每一棵树都标在了地图上。</span></p>
+      </div>
+    </div>
+    <div class="link-grid" id="maps"></div>
+    <h3 class="sub-h"><span class="en">Apps and web tools</span><span class="zh">应用与在线工具</span></h3>
+    <div class="link-grid" id="tools"></div>
+    <h3 class="sub-h"><span class="en">Webpages</span><span class="zh">网页</span></h3>
+    <div class="link-grid" id="webpages"></div>
+  </section>
+
+  <footer>
+    <p><a href="https://ychenzgithub.github.io/"><span class="en">More projects</span><span class="zh">更多项目</span></a> · <a href="https://github.com/ychenzgithub/TreeID"><span class="en">Source on GitHub</span><span class="zh">GitHub 源码</span></a></p>
+    <p><span class="en">The <b id="photo-total"></b> photos and figures were collected from many websites for personal study; where the original page or file name is known, it is shown when you enlarge a picture.</span><span class="zh">网站中的图片收集自各类网站，仅供个人学习；放大图片时会显示已知的原始来源。</span></p>
+  </footer>
+</main>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="x" aria-label="Close">×</button>
+  <button type="button" class="prev" aria-label="Previous">‹</button>
+  <img src="" alt="">
+  <div class="cap"></div>
+  <button type="button" class="next" aria-label="Next">›</button>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  document.getElementById('national-pdf').href = TREEID_DATA.scioly.nationalPdf;
+</script>
+</body>
+</html>
